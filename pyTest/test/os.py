@@ -6,7 +6,7 @@
 # AuthorSite: https://www.thesunboy.com/
 # Created Time: 2018-05-24 下午3:32
 #---------------------说明--------------------------
-#  
+#  hhh
 #---------------------------------------------------
 import os;
 import telnetlib;
