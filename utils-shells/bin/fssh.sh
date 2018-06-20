@@ -18,39 +18,46 @@ server=$1;
 
 
 function sshRemote(){
-    echo "try connecting [${2}]"
-    $(which ssh) -i ${authFile} -p  $@
+    echo "try connecting [${2}]";
+    echo $@;
+    $(which ssh) -i ${authFile} $@
 
 }
 
 
 case ${server} in
     mint)
-        sshRemote 22 hanxu@vpn.home
+        sshRemote hanxu@vpn.home
         ;;
     nas)
-        sshRemote 22 root@10.193.1.2
+        sshRemote root@10.193.1.2
         ;;
     bj)
-        sshRemote 1113 root@vpn.vpn
+        sshRemote root@vpn.vpn
         ;;
     vpnhk)
-        sshRemote 1113 root@vpn.hk
+        sshRemote root@vpn.hk
         ;;
     hk)
-        sshRemote 1113 root@hk.thesunboy.com
+        sshRemote root@hk.thesunboy.com
 	;;
     nasloop)
-        sshRemote 22 root@10.192.1.1
+        sshRemote root@10.192.1.1
         ;;
     comp)
-        sshRemote 1113 hanxu@vpn.company
+        sshRemote hanxu@vpn.company
 	    ;;
 	wbt1)
-        sshRemote 9802 root@222.240.217.26
+        sshRemote root@t1.wbcds1.wan
+	    ;;
+	oth*)
+	    shift;
+	    sshRemote $@
 	    ;;
     *)
-        echo "fssh.sh ( mint| nas| bj |hk |nasloop |comp |wbt1)"
+        echo "fssh.sh ( mint| nas| bj |hk |nasloop |comp |wbt1),
+            oth* root@test.com
+        "
 
         ;;
 esac
