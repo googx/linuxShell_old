@@ -84,12 +84,15 @@ install)
    ;;
 setalias)
         setalias;
+         unset setalias;
     ;;
 setenv)
         setenv;
+         unset setenv;
     ;;
 setfunction)
         setfunction;
+        unset setfunction;
     ;;
    uninstall)
 
