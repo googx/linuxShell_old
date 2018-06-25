@@ -6,16 +6,7 @@
 # AuthorSite: https://www.thesunboy.com/
 # Created Time: 2018-05-24 下午3:32
 #---------------------说明--------------------------
-<<<<<<< HEAD
-#  hhh
-=======
-#  
->>>>>>> 79e1711... first commit,重建linuxshell仓库,因为svn库被我手残操作给干掉了.历史版本全部丢失.../lb/lb, 现在改用git来管理.
-#---------------------------------------------------
 import os;
-import telnetlib;
-
-import datetime;
 #如果是 posix，说明系统是 Linux；如果是 nt，则是 Windows 系统。a
 print(os.name);
 
