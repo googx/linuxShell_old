@@ -14,6 +14,8 @@ pwd=os.getcwd();
 print(pwd);
 evn=os.getenv("PUB_SHELLS");
 
+os.name;
+
 print(evn);
 print(os.uname());
 print(os.getuid());

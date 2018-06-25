@@ -12,3 +12,4 @@
 import os;
 
 os.name;
+os.name;
