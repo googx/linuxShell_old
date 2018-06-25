@@ -7,7 +7,11 @@
 # Created Time: 2018-05-24 下午3:32
 #---------------------说明--------------------------
 import os;
-#如果是 posix，说明系统是 Linux；如果是 nt，则是 Windows 系统。a
+#如果是 posix，说明系统是 Linux；如果是 nt，则是 Windows 系统。
+#go on fix bug 1
+#go on fix bug 2
+
+
 print(os.name);
 
 pwd=os.getcwd();
