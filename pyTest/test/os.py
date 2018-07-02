@@ -12,6 +12,7 @@ import os;
 #go on fix bug 2
 
 
+
 print(os.name);
 
 pwd=os.getcwd();
