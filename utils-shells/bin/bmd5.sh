@@ -16,12 +16,13 @@ files=$1
 
 if [[ -d $files ]];then
 #for file in ``
-echo "-d is a fold"    
 #  else 
     for file in `ls $files`
     do
-        echo $file
-
+        file=$files/$file;
+        if [[ -f $file ]];then
+        /usr/bin/md5sum $file;
+        fi
 #echo $file md5=$((md5sum $file))
 #       echo "is not folder"
     done
