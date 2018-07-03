@@ -14,7 +14,7 @@ if [[ -z ${signal} ]]; then
     signal=15;
 
 fi
-pid = ps aux | grep $pname | grep -v grep | awk '{print $2}';
+pid=$(ps aux | grep $pname | grep -v grep | awk '{print $2}' | xargs);
 
 echo "使用kill -${signal} 来杀死。${pid}";
 #xargs
