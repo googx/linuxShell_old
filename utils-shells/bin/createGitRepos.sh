@@ -28,10 +28,8 @@ echo "创建仓库[ " $repoName " ]完成"
 
 #fi
 
-
 #查询大文件的top10 列表
 #git verify-pack -v .git/objects/pack/pack-252132d8532c30efffcb83d335cc11ce825debb4.idx | sort -k 3 -n | tail -10 | awk '{print $1}'
-
 
 
 #在找出指定的文件，对应的这些文件路径
