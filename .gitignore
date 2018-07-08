@@ -1,5 +1,8 @@
-*.idea/
-*.exe
-.tmp/
-*.so
 *.iml
+*.swp
+.idea/
+*.exe
+*.tar.gz
+.tmp/
+
+
