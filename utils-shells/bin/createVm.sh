@@ -145,10 +145,3 @@ esac
 #0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
 #开机
 #VBoxManage startvm twin7
-
- VBoxManage modifyvm win732 --cpus 1\
- --memory 1024\
- --vram 128\
- --acpi on \
- --ioapic on\
- --apic on;
