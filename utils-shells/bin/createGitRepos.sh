@@ -31,6 +31,5 @@ echo "创建仓库[ " $repoName " ]完成"
 #查询大文件的top10 列表
 #git verify-pack -v .git/objects/pack/pack-252132d8532c30efffcb83d335cc11ce825debb4.idx | sort -k 3 -n | tail -10 | awk '{print $1}'
 
-
 #在找出指定的文件，对应的这些文件路径
 #git rev-list --objects --all | grep -E "b185971b|fa1d66a0|ad6b2e42|3033db9c|d362e08c|101ac98f|79371045|293be777|e560875e|4f33d2d2"
