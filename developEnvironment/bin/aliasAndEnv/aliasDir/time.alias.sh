@@ -9,3 +9,5 @@
 #                                                   
 ####################################################
 alias nowdate='date "+%Y-%m-%d %H:%M:%S"'
+alias nowdate-date='date "+%Y-%m-%d"'
+alias nowdate-time='date "%H:%M:%S"'
